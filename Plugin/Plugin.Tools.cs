@@ -9,14 +9,14 @@ namespace AgentTrainer
 	public partial class AgentTrainer
 	{
 		static readonly string[] CATEGORY = new string[] {
-			"Top",
-			"Bottom",
-			"Bra",
-			"Underwear",
-			"Gloves",
-			"Stockings",
-			"Socks",
-			"Shoes"
+			"上衣",
+			"下衣",
+			"胸衣",
+			"胖次",
+			"手套",
+			"长筒袜",
+			"袜子",
+			"鞋子"
 		};
 
 		public static HashSet<StatsController> controllersQueue = new HashSet<StatsController>();
