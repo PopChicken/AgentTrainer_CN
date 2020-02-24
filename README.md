@@ -1,13 +1,13 @@
 # Agent Trainer
-In-game girl stats editor for AI-Syoujyo.
+AI少女游戏内角色状态实时修改器
 
-### Requirements
+### 前置需求
 * AI-Syoujyo Update 1206
 * AIAPI
 * BepInEx
 * ConfigurationManager
 * BepisPlugins
 
-### Installment
-* Extract the `BepInEx` folder in the game directory.
-* Play.
+### 安装
+* 将 `BepInEx` 文件夹放入游戏根目录
+* 开始游戏
