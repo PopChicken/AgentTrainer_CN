@@ -114,7 +114,7 @@ namespace AgentTrainer
 			{"searcheat", "找吃的"},
 			{"aftercook", "感受自己的厨艺"},
 			{"shallowsleep", "浅睡"},
-			{"endtasksleep", "正在起床"},
+			{"endtasksleep", "起床"},
 			{"searchanimal", "找小动物"},
 			{"endtaskpetanimal", "和小动物的游戏结束"},
 			{"searchgame", "找乐子"},
@@ -199,9 +199,9 @@ namespace AgentTrainer
 			{"weaknessa", "虚弱A"},
 			{"weaknessb", "虚弱B"},
 			{"takehpoint", "绝顶了"},
-			{"commonsearchbreak", "找地方休息 一般"},
-			{"commonbreak", "休息 一般"},
-			{"commongamethere", "游戏 一般"},
+			{"commonsearchbreak", "找地方一起休息"},
+			{"commonbreak", "一起休息"},
+			{"commongamethere", "一起游戏"},
 			{"comesleeptogether", "赶来一起睡觉"},
 			{"chaseyobai", "争取幽会"},
 			{"invitesleep", "邀请一起睡觉"},
@@ -211,7 +211,13 @@ namespace AgentTrainer
 			{"takesleeppoint", "睡足了"},
 			{"takesleephpoint", "睡前爱爱绝顶了"},
 			{"takeeatpoint", "吃饱了"},
-			{"takebreakpoint", "小憩够了"}
+			{"takebreakpoint", "小憩够了"},
+			{"ゲッター", "物欲强"},
+			{"ベイビー", "孩子气"},
+			{"ドライバー", "自立、热爱收集"},
+			{"コントローラー", "嗜睡"},
+			{"エキサイトメント・シーカー", "探索者"},
+			{"アームチェア", "自得其乐"}
 		};
 
 		readonly List<string> tabs = new List<string>()
@@ -506,7 +512,7 @@ namespace AgentTrainer
 					v => (int)v == -1 ?
 							"无" :
 							lifestyles.ContainsKey((int)v) ?
-								lifestyles[(int)v] :
+								Trans2CN(lifestyles[(int)v]) :
 								"未知"
 				);
 
